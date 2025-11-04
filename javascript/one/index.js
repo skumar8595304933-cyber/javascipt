@@ -68,12 +68,36 @@
 
 //sec clone
 
-let src={
-    a:12,
-    b:30,
-    c:40
-}
-let src1={value:"suraj"}
+// let src={
+//     a:123,
+//     b:304,
+//     c:450
+// }
+// let src1={value:"suraj"}
 
-let des=Object.assign({},src,src1)
-console.log(des)
+// let des=Object.assign(src,src1)
+// console.log(des)
+
+// *********************************************function
+
+
+//*declerative function
+// function sum(){
+//     return console.log("declerative function")
+// }
+// sum()
+
+
+// *named function
+// let a=function num(a,b){
+//     return console.log(a+b);
+// }
+
+//*annomias function
+let a=function(a,b){
+    console.log(a+b);
+    for(let value of arguments){
+        console.log("=",value)
+    };
+}
+a(2,4,3,4,5);
